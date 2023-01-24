@@ -6,8 +6,18 @@
     align-items: center;
     padding: 0px 10px;
     color: var(--text-color);
+    position: relative;
 }
 
 .link:hover{
     color: var(--bg-dark);
+}
+
+.avatar{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.avatar:hover{
+    cursor: pointer;
 }
