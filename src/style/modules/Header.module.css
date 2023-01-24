@@ -16,7 +16,10 @@
 .link:hover{
     color: var(--bg-dark);
 }
-
+.brandSection{
+    display: flex;
+    align-items: center;
+}
 .avatar{
     width: 50px;
     border-radius: 50px;
@@ -29,4 +32,35 @@
 .avatarContainer{
     position: relative;
     z-index: 2;
+}
+.bars{
+   font-size: 1.7em;
+   margin:0px 10px; 
+   display: none; 
+   font-weight: bold;
+}
+
+.bars:hover{
+    cursor: pointer;
+}
+
+.navsection{
+    display: none;
+}
+@media screen and (max-width:767px) {
+    .bars{
+        font-size: 1.7em;
+        margin:0px 10px; 
+        display: block; 
+     }
+    
+    .navsection{
+        display: block;
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        top: 0px;
+        z-index: 3;
+        background-color: var(--bg-dark);
+    }
 }

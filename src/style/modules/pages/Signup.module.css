@@ -1,3 +1,4 @@
+
 .redirectSection{
     display: flex;
     justify-content: space-between;
@@ -15,3 +16,21 @@
 .link{
     color: #777;
 }
+
+
+
+@media screen and (max-width:900px) and (min-width:768px) {
+    .redirectSection{
+         width: 70%;
+         margin: auto;
+     }
+     
+ }
+ 
+ @media screen and (max-width:767px) {
+     .redirectSection{
+         width: 90%;
+         margin: auto;
+     }
+ 
+ }

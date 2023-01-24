@@ -51,7 +51,7 @@
 @media screen and (max-width:900px) and (min-width:768px) {
     .container{
         width: 70%;
-        margin: auto;
+        margin: 20px auto 0px;
     }
     
 }
@@ -59,8 +59,7 @@
 @media screen and (max-width:767px) {
     .container{
         width: 90%;
-        margin: auto;
+        margin: 20px auto 0px;
     }
-    
 
 }

@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.todosSection{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    border-bottom: 1px solid var(--text-color);;
+}
+.title{
+    font-size: 1.7em;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.addicon{
+    font-size: 2em;
+    color: var(--bg-light);
+    border: 1px solid var(--text-color);
+    border-radius: 25px;
+    padding: 3px;
+}
+.todosSection>div{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addicon:hover{
+    cursor: pointer;
+}
+.cross{
+    font-size: 1.7em;
+    margin:0px 10px; 
+    display: block;
+    color:  var(--text-color);
+ }
+ .cross:hover{
+    cursor: pointer;
+ }
+@media screen and (max-width:767px) {
+    .container{
+        border-right: 1px solid var(--text-color);    
+        min-height: 100%;    
+    }
+    
+}
