@@ -7,8 +7,12 @@
     padding: 0px 10px;
     color: var(--text-color);
     position: relative;
+    z-index: 1;
 }
-
+.header:focus{
+   border: none;
+   outline: none;
+}
 .link:hover{
     color: var(--bg-dark);
 }
@@ -20,4 +24,9 @@
 
 .avatar:hover{
     cursor: pointer;
+}
+
+.avatarContainer{
+    position: relative;
+    z-index: 2;
 }

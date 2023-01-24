@@ -1,0 +1,17 @@
+ .redirectSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 40%;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    border-radius: 0px 0px 3px 3px;
+    color: var(--bg-dark);
+    margin-bottom: 25px;
+}
+
+.link{
+    color: #777;
+}

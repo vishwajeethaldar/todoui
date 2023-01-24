@@ -9,11 +9,14 @@
     --bg-light:#0ac8c8;
     --bg-hdark:#004343;
     --text-color:#ffffff;
-    --border-color:#cccccc;
+    --border-color:#0ac8c81d;;
 
 }
 a{
     color: var(--text-color);
     text-decoration: none;
     display: inline-block;
+}
+input[type="submit"]:hover{
+    cursor: pointer ;
 }

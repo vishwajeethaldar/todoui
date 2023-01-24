@@ -1,19 +1,15 @@
 import styles from '../style/modules/LoginForm.module.css';
 import React from 'react';
-
-const LoginForm = ({login})=>{
-
+import { login } from '../lib';
+import { handleChange } from '../lib';
+const LoginForm = ()=>{
     const [loginCreds, setLoginCreads] = React.useState({email:"", password:''});
-
-    const handleChange = (e)=>{
-        const {name, value} = e.target.value;
-        setLoginCreads({...loginCreds, [name]:value});
-    }
 
     // handle submission of form 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        if(loginCreds.email===""||loginCreds.password||loginCreds.password===""){
+       
+        if(loginCreds.email===""||loginCreds.password===""){
             return
         }
         login(loginCreds.email,loginCreds.password);
@@ -21,17 +17,19 @@ const LoginForm = ({login})=>{
 
     return (
         <main className={styles.container}>
+            <h1 className={styles.title}> Login </h1>
             <form className={styles.loginForm} onSubmit={handleSubmit}>
-                <div className={styles.formContainer}>
-                    <label for="email" className={styles.formLabel}>
+
+                <div className={styles.loginForm}>
+                    <label  className={styles.formLabel}>
                         Email :
                     </label>
-                    <input type={"email"} name="email" placeholder='Email..' className={styles.input} onChange={handleChange}/>
+                    <input type={"email"} name="email" placeholder='Email..' className={styles.input} onChange={(e)=>handleChange(e, loginCreds, setLoginCreads)}/>
 
-                    <label for="email" className={styles.formLabel}>
+                    <label  className={styles.formLabel}>
                         Password :
                     </label>
-                    <input type={"password"} name="password" placeholder='Password..' className={styles.input} onChange={handleChange}/>
+                    <input type={"password"} name="password" placeholder='Password..' className={styles.input} onChange={(e)=>handleChange(e, loginCreds, setLoginCreads)}/>
 
                     <input type="submit" value={"Login"} className={styles.loginBtn}/>
                     

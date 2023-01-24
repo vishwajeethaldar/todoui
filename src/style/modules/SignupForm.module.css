@@ -5,9 +5,10 @@
     padding: 20px 15px;
     margin-top: 25px;
     border-radius: 3px 3px 0px 0px;
+    margin-top: 20px;
 }
 
-.loginForm{
+.signupForm{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -20,7 +21,7 @@
 }
 
 .formLabel{
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 18px;
 }
 .input{
@@ -31,7 +32,7 @@
     padding-left: 10px;
     font-size: 16px;
 }
-.loginBtn{
+.signupBtn{
     height: 40px;
     width: 150px;
     font-size: 16px;
@@ -51,7 +52,8 @@
 @media screen and (max-width:900px) and (min-width:768px) {
     .container{
         width: 70%;
-        margin: auto;
+        margin: 20px auto;
+
     }
     
 }
@@ -59,7 +61,7 @@
 @media screen and (max-width:767px) {
     .container{
         width: 90%;
-        margin: auto;
+        margin: 20px auto;
     }
     
 

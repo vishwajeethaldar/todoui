@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from '../style/modules/Menus.module.css';
 
 export default function Menus() {
+    
   return (
     <div className={styles.container}>
         <div className={styles.avatarContainer}>
@@ -14,7 +15,10 @@ export default function Menus() {
         <Link to="#">
             <h2>Profile</h2>
         </Link>
+
+        <Link to="#">
         <h2> Sign Out </h2>
+        </Link>
     </div>
   )
 }
