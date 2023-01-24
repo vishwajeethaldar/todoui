@@ -1,7 +1,10 @@
 import React from 'react'
-
+import { Header } from '../components'
+import styles from '../style/modules/Login.module.css'
 export default function Login() {
   return (
-    <div>Login</div>
+    <div style={styles.container}>
+      <Header/>
+    </div>
   )
 }

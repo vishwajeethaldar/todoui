@@ -5,6 +5,15 @@
 }
 
 :root{
-    --bg-color:#008080;
-}
+    --bg-dark:#036a6a;
+    --bg-light:#0ac8c8;
+    --bg-hdark:#004343;
+    --text-color:#ffffff;
+    --border-color:#cccccc;
 
+}
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+}
