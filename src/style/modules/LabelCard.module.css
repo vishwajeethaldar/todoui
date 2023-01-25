@@ -8,8 +8,11 @@
     text-transform: uppercase;
     color: var(--text-color);
     justify-content: space-between;
+    position: relative;
 }
-
+.card:focus{
+    outline: none;
+}
 .menu:hover{
     cursor: pointer;
 }

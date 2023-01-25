@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+  
+    position: absolute;
+    right: -1px;
+    top: 35px;
+    z-index: 21;
+    min-width: 100px;
+    font-size: 10px;
+    padding: 10px 5px;
+    background-color: var(--bg-hdark);
+    border-radius: 5px;
+}
+.container p{
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.container p:hover{
+    cursor: pointer;
+    color: var(--bg-light);
+}

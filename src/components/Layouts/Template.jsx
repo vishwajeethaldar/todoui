@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import Header from '../Header';
 import Navbar from '../Navbar';
 
-export default function Template() {
+export default function Template({children}) {
   
   return (
     <div className={styles.container}>
@@ -15,7 +15,7 @@ export default function Template() {
             <Navbar/>
         </nav>
         <main className={styles.main}>
-
+        {children}
         </main>
         <footer className={styles.footer}>
                 <Footer/>

@@ -1,0 +1,68 @@
+.addTaskContainer{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid  #eee;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    overflow: hidden;
+    position: relative;
+}
+.addTaskForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input{
+    height: 35px;
+    padding: 2px 12px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.input[type="color"]{
+    width: 150px;    
+}
+.button{
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+}
+.title{
+    text-align: center;
+    padding: 10px 0px;
+}
+label{
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.hideForm{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.4em;
+}
+
+.hideForm:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:900px) and (min-width:768px) {
+    .addTaskContainer{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .addTaskContainer{
+        width: 80%;
+        
+    }
+
+}

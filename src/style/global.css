@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+*:focus{
+    outline: none;
+}
 :root{
     --bg-dark:#036a6a;
     --bg-light:#0ac8c8;
@@ -17,6 +20,7 @@ a{
     text-decoration: none;
     display: inline-block;
 }
+
 input[type="submit"]:hover{
     cursor: pointer ;
 }

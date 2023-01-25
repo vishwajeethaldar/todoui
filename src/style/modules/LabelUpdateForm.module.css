@@ -1,0 +1,68 @@
+.container{
+    width: 350px;
+    min-height: 250px;
+    position: fixed;
+    top: 25%;
+    left: 27%;
+    z-index: 20;
+    background-color: var(--text-color);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+
+.labelForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input{
+    height: 35px;
+    width: 100%;
+    padding: 0px 15px;
+    outline: none;
+    border: 1px soldi #eee;
+}
+input[type="color"]{
+    padding: 0px;
+}
+.button{
+    height: 35px;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.title{
+    text-align: center;
+    padding-top: 20px;
+}
+.closeIcon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+}
+.closeIcon:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:900px) and (min-width:768px) {
+    .container{
+        width: 60%;
+        left: 35%;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .container{
+        width: 90%;
+        left: 5%;
+    }
+
+}
